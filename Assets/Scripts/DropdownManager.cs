@@ -15,7 +15,7 @@ public class DropdownManager : MonoBehaviour
         // Parent Dropdown에서 선택된 옵션에 따라 Child Dropdown의 옵션을 설정
         switch (parentDropdown.value)
         {
-            case 0: // 경남 선택한 경우
+            case 0: // 선택하기 전
                 SetChildDropdownOptions(new string[] { "지역을 선택해주세요." });
                 break;
             case 1: // 경남 선택한 경우
@@ -27,7 +27,7 @@ public class DropdownManager : MonoBehaviour
             case 3: // 전북 선택한 경우
                 SetChildDropdownOptions(new string[] { "군산", "김제", "완주", "익산", "정읍", "진안" });
                 break;
-            default: // 다른 경우
+            default: // 
                 SetChildDropdownOptions(new string[] { });
                 break;
         }
