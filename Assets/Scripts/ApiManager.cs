@@ -6,13 +6,15 @@ using TMPro;
 [System.Serializable]
 public class MeasurementItem
 {
-    public float inTp;
-    public float inHd;
-    public string frmhsId;
-    public float cunt;
-    public float outWs;       // New variable
-    public float daysuplyqy;  // New variable
+    public float inTp;       // 내부온도
+    public float inHd;       // 내부습도
+    public string frmhsId;   // 농장코드
+    public string measDtStr; // 측정일시
+    public float outWs;      // 풍속
+    public float outTp;      // 외부온도
+    public float inCo2;      // 내부 이산화탄소
 }
+
 
 [System.Serializable]
 public class JsonResponse
@@ -47,9 +49,10 @@ public class ApiManager : MonoBehaviour
     public float InTpValue { get; private set; }
     public float InHdValue { get; private set; }
     public string FrmhsIdValue { get; private set; }
-    public float CuntValue { get; private set; }
-    public float OutWsValue { get; private set; }       // New variable
-    public float DaysuplyqyValue { get; private set; }  // New variable
+    public string MeasDtSrValue { get; private set; }
+    public float OutWsValue { get; private set; }
+    public float OutTpValue { get; private set; }   // New variable
+    public float InCo2Value { get; private set; }  // New variable
 
     void Start()
     {
@@ -95,13 +98,14 @@ public class ApiManager : MonoBehaviour
                     InTpValue = measurementItem.inTp;
                     InHdValue = measurementItem.inHd;
                     FrmhsIdValue = measurementItem.frmhsId;
-                    CuntValue = measurementItem.cunt;
-                    OutWsValue = measurementItem.outWs;          // Assign the new value
-                    DaysuplyqyValue = measurementItem.daysuplyqy; // Assign the new value
+                    OutWsValue = measurementItem.outWs;
+                    MeasDtSrValue = measurementItem.measDtStr; // 수정: 변수명을 맞춤
+                    OutTpValue = measurementItem.outTp;
+                    InCo2Value = measurementItem.inCo2;
 
-                    Debug.Log($"inTp: {InTpValue}, inHd: {InHdValue}, frmhsId: {FrmhsIdValue}, cunt: {CuntValue}, outWs: {OutWsValue}, daysuplyqy: {DaysuplyqyValue}");
+                    Debug.Log($"inTp: {InTpValue}, inHd: {InHdValue}, frmhsId: {FrmhsIdValue}, measDtStr: {MeasDtSrValue}, outWs: {OutWsValue}, outTp: {OutTpValue}, inCo2: {InCo2Value}");
 
-                    displayText.text = $"내부온도: {InTpValue}\n내부습도: {InHdValue}\n농가코드: {FrmhsIdValue}\n일 급액횟수: {CuntValue}\n외부 풍속: {OutWsValue}\n일 공급량: {DaysuplyqyValue}";
+                    displayText.text = $"내부온도: {InTpValue}\n내부습도: {InHdValue}\n농가코드: {FrmhsIdValue}\n측정 시간: {MeasDtSrValue}\n외부 풍속: {OutWsValue}\n외부온도: {OutTpValue}\n내부 이산화탄소: {InCo2Value}";
                 }
             }
         }

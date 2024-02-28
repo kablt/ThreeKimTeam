@@ -32,9 +32,9 @@ public class Access : MonoBehaviour
             float inTpValue = apiManager.InTpValue;
             float inHdValue = apiManager.InHdValue;
             string frmhsIdValue = apiManager.FrmhsIdValue;
-            float cuntValue = apiManager.CuntValue;
+            
 
-            Debug.Log($"Access Script - inTp: {inTpValue}, inHd: {inHdValue}, frmhsId: {frmhsIdValue}, cunt: {cuntValue}");
+            Debug.Log($"Access Script - inTp: {inTpValue}, inHd: {inHdValue}, frmhsId: {frmhsIdValue}");
            
             // Reset the timer
             timer = 0f;
