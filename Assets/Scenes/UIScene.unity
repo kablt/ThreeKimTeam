@@ -1207,9 +1207,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9d06196cb89a8e499c8409504c8c28b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  content: {fileID: 2007452901}
-  cellPrefab: {fileID: 9181025058095321926, guid: e6191f68bb1e8fe448fde546e2ffb59a,
-    type: 3}
 --- !u!1 &1135747091
 GameObject:
   m_ObjectHideFlags: 0
@@ -1658,7 +1655,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.0000076293945}
+  m_AnchoredPosition: {x: 0, y: -0.000030517578}
   m_SizeDelta: {x: 1784, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2007452902

@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections;
 using TMPro;
-
+/*
 [System.Serializable]
 public class MeasurementItem
 {
@@ -40,6 +40,7 @@ public class Items
 {
     public MeasurementItem[] item;
 }
+*/
 
 public class ApiManager : MonoBehaviour
 {

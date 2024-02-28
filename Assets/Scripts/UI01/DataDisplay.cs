@@ -72,6 +72,7 @@ public class DataDisplay : MonoBehaviour
         texts[1].text = data.code; // DataText_no
         texts[3].text = data.species; // DataText_species
         texts[5].text = data.company; // DataText_company
+      
     }
 
     void ClearCells()
