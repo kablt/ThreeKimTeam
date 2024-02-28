@@ -86,7 +86,7 @@ public class ApiManager : MonoBehaviour
             else
             {
                 string apiResponse = webRequest.downloadHandler.text;
-                Debug.Log("API Response: " + apiResponse);
+                //Debug.Log("API Response: " + apiResponse);
 
                 JsonResponse jsonResponse = JsonUtility.FromJson<JsonResponse>(apiResponse);
 
