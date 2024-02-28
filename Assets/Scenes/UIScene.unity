@@ -858,51 +858,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1538188232}
   m_CullTransparentMesh: 1
---- !u!1 &1735586877
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1735586879}
-  - component: {fileID: 1735586878}
-  m_Layer: 0
-  m_Name: CSVLoager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1735586878
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1735586877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22dc1685a29fbf048aac1d91f602d0c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  csvFile: {fileID: 4900000, guid: 3cf9ba73a31d5e5448e76e81caec0ff9, type: 3}
---- !u!4 &1735586879
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1735586877}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 482.38647, y: 503.3116, z: -8.143705}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1828043381
 GameObject:
   m_ObjectHideFlags: 0
@@ -1066,7 +1021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropdownManager: {fileID: 1005361949}
-  csvLoader: {fileID: 1735586878}
+  csvFile: {fileID: 4900000, guid: 3cf9ba73a31d5e5448e76e81caec0ff9, type: 3}
   resultText: {fileID: 593722716}
 --- !u!4 &2138161038
 Transform:
@@ -1328,5 +1283,4 @@ SceneRoots:
   - {fileID: 1433863970}
   - {fileID: 1276814773}
   - {fileID: 1005361950}
-  - {fileID: 1735586879}
   - {fileID: 2138161038}
