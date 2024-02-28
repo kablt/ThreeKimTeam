@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1114149764179180292}
   - component: {fileID: 1610641695238184055}
   m_Layer: 5
-  m_Name: DataText_Item
+  m_Name: DataText_species
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 6782119874102925807}
   - component: {fileID: 8553971355827270211}
   m_Layer: 5
-  m_Name: DataText_Company
+  m_Name: DataText_company
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -841,7 +841,7 @@ GameObject:
   - component: {fileID: 3816997760228605999}
   - component: {fileID: 3064694653284414588}
   m_Layer: 5
-  m_Name: DataText_Code
+  m_Name: DataText_no
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1160,8 +1160,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c7d343af0bcb954480ff98421102f8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  codeText: {fileID: 3064694653284414588}
-  itemText: {fileID: 1610641695238184055}
+  noText: {fileID: 0}
+  speciesText: {fileID: 0}
   companyText: {fileID: 8553971355827270211}
 --- !u!114 &8875539953030602116
 MonoBehaviour:
