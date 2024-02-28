@@ -1,18 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class FromIDCellControl : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] TMP_Text formId;
+    public float DownId;
+
+
+    //public ICellDelegate cellDelegate; 이건 뭔지 모르겠다 보류
+    private int index;
+
+    private void Awake()
     {
-        
+        formId.text = "";
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetData(int index)
     {
-        
+        this.index = index;
     }
+    //아래 함수 실행시 디테일 패널 생성인가?
+    /*
+    public void OnClickCell()
+    {
+        cellDelegate.OnClickCell(this.index);
+    }
+    */ 
 }
