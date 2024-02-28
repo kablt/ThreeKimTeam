@@ -12,29 +12,29 @@ public class DictionarySample : MonoBehaviour
     void Start()
     {
         Dictionary<string, string> corp1 = new Dictionary<string, string>();
-        corp1["Code"] = "00";
-        corp1["Item"] = "품종";
-        corp1["Company"] = "업체";
+        corp1["no"] = "";
+        corp1["species"] = "";
+        corp1["company"] = "";
 
         Dictionary<string, string> corp2 = new Dictionary<string, string>();
-        corp2["Code"] = "12";
-        corp2["Item"] = "코모도";
-        corp2["Company"] = "그린씨에스";
+        corp2["no"] = "";
+        corp2["species"] = "";
+        corp2["company"] = "";
 
         Dictionary<string, string> corp3 = new Dictionary<string, string>();
-        corp3["Code"] = "39";
-        corp3["Item"] = "미확인";
-        corp3["Company"] = "그린씨에스";
+        corp3["no"] = "";
+        corp3["species"] = "";
+        corp3["company"] = "";
 
         Dictionary<string, string> corp4 = new Dictionary<string, string>();
-        corp4["Code"] = "43";
-        corp4["Item"] = "멀리스";
-        corp4["Company"] = "동우";
+        corp4["no"] = "";
+        corp4["species"] = "";
+        corp4["company"] = "";
 
         Dictionary<string, string> corp5 = new Dictionary<string, string>();
-        corp5["Code"] = "15";
-        corp5["Item"] = "코모도";
-        corp5["Company"] = "신한에이텍";
+        corp5["no"] = "";
+        corp5["species"] = "";
+        corp5["company"] = "";
 
         List<Dictionary<string, string>> corpBook = new List<Dictionary<string, string>>();
         corpBook.Add(corp1);
@@ -45,7 +45,7 @@ public class DictionarySample : MonoBehaviour
 
         // 불러오기
         Dictionary<string, string> dict = corpBook[0];
-        Debug.Log(dict["Company"]);
+        Debug.Log(dict["company"]);
 
         //프리팹 Cell을 가져와서 ScrollView의 Content 안에 생성
         GameObject cellObject1 = Instantiate(cellPrefab, content);
