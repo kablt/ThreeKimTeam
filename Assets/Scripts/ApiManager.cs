@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections;
@@ -43,7 +44,6 @@ public class Items
 public class ApiManager : MonoBehaviour
 {
     public TextMeshProUGUI displayText;
-    private string apiUrl = "http://apis.data.go.kr/1390000/SmartFarmdata/envdatarqst?serviceKey=ndExmAZPa6Z1SBWydoZsH8RFcdL6XjiFlmZ4Qe0LVdu6WyGJJpkvYMB5ecMII4AIXi0P%2BYcuqLKslBw6ILFgbA%3D%3D&searchFrmhsCode=81&returnType=json";
 
     // Public properties to access values
     public float InTpValue { get; private set; }
@@ -53,31 +53,18 @@ public class ApiManager : MonoBehaviour
     public float OutWsValue { get; private set; }
     public float OutTpValue { get; private set; }   // New variable
     public float InCo2Value { get; private set; }  // New variable
+    private string apiUrl;
+    public string formid;
 
     void Start()
     {
-        // Fetch API data immediately when the script starts
-        StartCoroutine(GetApiData());
 
-        // Start the coroutine to update every 10 seconds
-        StartCoroutine(UpdateApiDataPeriodically());
-    }
-
-    IEnumerator UpdateApiDataPeriodically()
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(10f); // Wait for 10 seconds
-
-            yield return StartCoroutine(GetApiData()); // Fetch API data
-
-            // Optionally, you can add any additional logic or debug statements here
-            Debug.Log("API data updated at: " + Time.time);
-        }
     }
 
     IEnumerator GetApiData()
     {
+        
+        apiUrl = $"http://apis.data.go.kr/1390000/SmartFarmdata/envdatarqst?serviceKey=ndExmAZPa6Z1SBWydoZsH8RFcdL6XjiFlmZ4Qe0LVdu6WyGJJpkvYMB5ecMII4AIXi0P%2BYcuqLKslBw6ILFgbA%3D%3D&searchFrmhsCode={formid}&returnType=json";
         using (UnityWebRequest webRequest = UnityWebRequest.Get(apiUrl))
         {
             yield return webRequest.SendWebRequest();
@@ -109,5 +96,10 @@ public class ApiManager : MonoBehaviour
                 }
             }
         }
+    }
+    public void OnClickButton()
+    {
+        // Fetch API data when the button is clicked
+        StartCoroutine(GetApiData());
     }
 }
