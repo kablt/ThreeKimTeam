@@ -50,7 +50,7 @@ public class DataDisplay : MonoBehaviour
             if (region == selectedRegion && city == selectedCity)
             {
                 FarmData data = new FarmData();
-                data.code = rowValues[0];
+                data.code = rowValues[1];
                 data.species = rowValues[4];
                 data.company = rowValues[5];
                 dataList.Add(data);
