@@ -1139,7 +1139,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentDropdown: {fileID: 124346042}
   childDropdown: {fileID: 334722206}
-  ActiveButton: 1
   target: {fileID: 1048754162}
 --- !u!4 &1005361950
 Transform:
