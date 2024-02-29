@@ -115,7 +115,7 @@ public class CellController : MonoBehaviour
 
     IEnumerator GetApiData()
     {
-
+        
         apiUrl = $"http://apis.data.go.kr/1390000/SmartFarmdata/envdatarqst?serviceKey=ndExmAZPa6Z1SBWydoZsH8RFcdL6XjiFlmZ4Qe0LVdu6WyGJJpkvYMB5ecMII4AIXi0P%2BYcuqLKslBw6ILFgbA%3D%3D&searchFrmhsCode={formid}&returnType=json";
         using (UnityWebRequest webRequest = UnityWebRequest.Get(apiUrl))
         {
