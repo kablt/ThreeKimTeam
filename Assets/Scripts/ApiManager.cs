@@ -2,11 +2,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections;
 using TMPro;
-using System;
-
-
 /*
->>>>>>> origin/?¬í˜„(?´êº¼)
 [System.Serializable]
 public class MeasurementItem
 {
@@ -40,16 +36,12 @@ public class Body
 public class Items
 {
     public MeasurementItem[] item;
-} 
+}
 
 public class ApiManager : MonoBehaviour
 {
     public TextMeshProUGUI displayText;
-<<<<<<< HEAD
-    
-=======
     private string apiUrl = "http://apis.data.go.kr/1390000/SmartFarmdata/envdatarqst?serviceKey=ndExmAZPa6Z1SBWydoZsH8RFcdL6XjiFlmZ4Qe0LVdu6WyGJJpkvYMB5ecMII4AIXi0P%2BYcuqLKslBw6ILFgbA%3D%3D&searchFrmhsCode=81&returnType=json";
->>>>>>> origin/?¬í˜„(?´êº¼)
 
     // Public properties to access values
     public float InTpValue { get; private set; }
@@ -61,9 +53,6 @@ public class ApiManager : MonoBehaviour
 
     void Start()
     {
-<<<<<<< HEAD
-        
-=======
         // Fetch API data immediately when the script starts
         StartCoroutine(GetApiData());
 
@@ -82,7 +71,6 @@ public class ApiManager : MonoBehaviour
             // Optionally, you can add any additional logic or debug statements here
             Debug.Log("API data updated at: " + Time.time);
         }
->>>>>>> origin/?¬í˜„(?´êº¼)
     }
 
     IEnumerator GetApiData()
@@ -98,7 +86,7 @@ public class ApiManager : MonoBehaviour
             else
             {
                 string apiResponse = webRequest.downloadHandler.text;
-                //Debug.Log("API Response: " + apiResponse);
+                Debug.Log("API Response: " + apiResponse);
 
                 JsonResponse jsonResponse = JsonUtility.FromJson<JsonResponse>(apiResponse);
 
@@ -118,13 +106,5 @@ public class ApiManager : MonoBehaviour
             }
         }
     }
-<<<<<<< HEAD
-    public void OnClickButton()
-    {
-        StartCoroutine(GetApiData());
-    }
-}
-=======
 }
 */
-

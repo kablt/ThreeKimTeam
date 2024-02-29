@@ -48,8 +48,6 @@ public class CellController : MonoBehaviour
     [SerializeField] TextMeshProUGUI noText;
     [SerializeField] TextMeshProUGUI speciesText;
     [SerializeField] TextMeshProUGUI companyText;
-    DataDisplay display;
-
     [SerializeField] GameObject detailPanel;
 
 
@@ -65,7 +63,6 @@ public class CellController : MonoBehaviour
     private string apiUrl;
     public string formid;
     Canvas canvas;
-
 
 
 

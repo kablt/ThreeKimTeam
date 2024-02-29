@@ -1210,13 +1210,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-<<<<<<< HEAD
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ApiManager, Assembly-CSharp
-=======
       - m_Target: {fileID: 670301446505882015}
         m_TargetAssemblyTypeName: CellController, Assembly-CSharp
->>>>>>> origin/재현(내꺼)
         m_MethodName: OnClickButton
         m_Mode: 1
         m_Arguments:
