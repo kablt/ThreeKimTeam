@@ -1160,8 +1160,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c7d343af0bcb954480ff98421102f8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noText: {fileID: 0}
-  speciesText: {fileID: 0}
+  noText: {fileID: 3064694653284414588}
+  speciesText: {fileID: 1610641695238184055}
   companyText: {fileID: 8553971355827270211}
 --- !u!114 &8875539953030602116
 MonoBehaviour:

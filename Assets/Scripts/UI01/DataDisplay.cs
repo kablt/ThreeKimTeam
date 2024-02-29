@@ -16,6 +16,7 @@ public class DataDisplay : MonoBehaviour
         public string code;
         public string species;
         public string company;
+        public GameObject content;
     }
 
     void Start()
@@ -26,6 +27,7 @@ public class DataDisplay : MonoBehaviour
 
     public void OnClickQuery()
     {
+        
         // 선택된 값 가져오기
         string selectedRegion = dropdownManager.parentDropdown.options[dropdownManager.parentDropdown.value].text;
         string selectedCity = dropdownManager.childDropdown.options[dropdownManager.childDropdown.value].text;

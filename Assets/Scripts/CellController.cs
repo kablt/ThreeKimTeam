@@ -34,7 +34,7 @@ public class CellController : MonoBehaviour
 
         // null 체크를 추가하여 변수가 null이 아닌 경우에만 값을 설정합니다.
         if (noText != null && data.ContainsKey("no"))
-            noText.text = data["no"]; // Code 키를 가지고 있는 값을 출력
+            noText.text = data["no"]; // 농장코드 키를 가지고 있는 값을 출력
 
         if (speciesText != null && data.ContainsKey("species"))
             speciesText.text = data["species"];

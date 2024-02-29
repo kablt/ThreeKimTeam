@@ -48,6 +48,7 @@ public class DictionarySample : MonoBehaviour
         Debug.Log(dict["company"]);
 
         //프리팹 Cell을 가져와서 ScrollView의 Content 안에 생성
+        /*
         GameObject cellObject1 = Instantiate(cellPrefab, content);
         CellController cellController1 = cellObject1.GetComponent<CellController>(); //CellController를 불러오기
         cellController1.SetData(corp1); //corp1 전달
@@ -67,6 +68,7 @@ public class DictionarySample : MonoBehaviour
         GameObject cellObject5 = Instantiate(cellPrefab, content);
         CellController cellController5 = cellObject5.GetComponent<CellController>(); //CellController를 불러오기
         cellController5.SetData(corp5); //corp5 전달
+        */
 
     }
 
