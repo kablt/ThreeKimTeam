@@ -9,6 +9,7 @@ public class CellController : MonoBehaviour
     [SerializeField] TextMeshProUGUI noText;
     [SerializeField] TextMeshProUGUI speciesText;
     [SerializeField] TextMeshProUGUI companyText;
+    DataDisplay display;
 
     void Awake()
     {

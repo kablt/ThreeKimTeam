@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections;
 using TMPro;
+using System;
 
 [System.Serializable]
 public class MeasurementItem
@@ -39,11 +40,12 @@ public class Body
 public class Items
 {
     public MeasurementItem[] item;
-}
+} 
 
 public class ApiManager : MonoBehaviour
 {
     public TextMeshProUGUI displayText;
+    
 
     // Public properties to access values
     public float InTpValue { get; private set; }
@@ -58,7 +60,7 @@ public class ApiManager : MonoBehaviour
 
     void Start()
     {
-
+        
     }
 
     IEnumerator GetApiData()
@@ -99,7 +101,6 @@ public class ApiManager : MonoBehaviour
     }
     public void OnClickButton()
     {
-        // Fetch API data when the button is clicked
         StartCoroutine(GetApiData());
     }
 }

@@ -10,10 +10,11 @@ public class DataDisplay : MonoBehaviour
     public RectTransform content; // Scroll View의 Content 객체
     public GameObject cellPrefab; // Cell 프리팹
 
+
     // Cell에 표시할 데이터를 저장하는 클래스
     private class FarmData
     {
-        public string code;
+        public string code; //농장코드
         public string species;
         public string company;
     }
