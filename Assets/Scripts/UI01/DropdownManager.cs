@@ -16,7 +16,7 @@ public class DropdownManager : MonoBehaviour
         switch (parentDropdown.value)
         {
             case 0: // 선택하기 전
-                SetChildDropdownOptions(new string[] { "지역을 선택해주세요." });
+                SetChildDropdownOptions(new string[] { "지역(시/군)" });
                 break;
             case 1: // 경남 선택한 경우
                 SetChildDropdownOptions(new string[] { "김해", "사천", "창녕", "함안" });

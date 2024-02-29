@@ -1,22 +1,23 @@
-
 using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections;
 using TMPro;
+<<<<<<< HEAD
 using System;
 
+=======
+/*
+>>>>>>> origin/ìž¬í˜„(ë‚´êº¼)
 [System.Serializable]
 public class MeasurementItem
 {
-    public float inTp;       // ³»ºÎ¿Âµµ
-    public float inHd;       // ³»ºÎ½Àµµ
-    public string frmhsId;   // ³óÀåÄÚµå
-    public string measDtStr; // ÃøÁ¤ÀÏ½Ã
-    public float outWs;      // Ç³¼Ó
-    public float outTp;      // ¿ÜºÎ¿Âµµ
-    public float inCo2;      // ³»ºÎ ÀÌ»êÈ­Åº¼Ò
+    public float inTp;
+    public float inHd;
+    public string frmhsId;
+    public float cunt;
+    public float outWs;       // New variable
+    public float daysuplyqy;  // New variable
 }
-
 
 [System.Serializable]
 public class JsonResponse
@@ -45,28 +46,48 @@ public class Items
 public class ApiManager : MonoBehaviour
 {
     public TextMeshProUGUI displayText;
+<<<<<<< HEAD
     
+=======
+    private string apiUrl = "http://apis.data.go.kr/1390000/SmartFarmdata/envdatarqst?serviceKey=ndExmAZPa6Z1SBWydoZsH8RFcdL6XjiFlmZ4Qe0LVdu6WyGJJpkvYMB5ecMII4AIXi0P%2BYcuqLKslBw6ILFgbA%3D%3D&searchFrmhsCode=81&returnType=json";
+>>>>>>> origin/ìž¬í˜„(ë‚´êº¼)
 
     // Public properties to access values
     public float InTpValue { get; private set; }
     public float InHdValue { get; private set; }
     public string FrmhsIdValue { get; private set; }
-    public string MeasDtSrValue { get; private set; }
-    public float OutWsValue { get; private set; }
-    public float OutTpValue { get; private set; }   // New variable
-    public float InCo2Value { get; private set; }  // New variable
-    private string apiUrl;
-    public string formid;
+    public float CuntValue { get; private set; }
+    public float OutWsValue { get; private set; }       // New variable
+    public float DaysuplyqyValue { get; private set; }  // New variable
 
     void Start()
     {
+<<<<<<< HEAD
         
+=======
+        // Fetch API data immediately when the script starts
+        StartCoroutine(GetApiData());
+
+        // Start the coroutine to update every 10 seconds
+        StartCoroutine(UpdateApiDataPeriodically());
+    }
+
+    IEnumerator UpdateApiDataPeriodically()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(10f); // Wait for 10 seconds
+
+            yield return StartCoroutine(GetApiData()); // Fetch API data
+
+            // Optionally, you can add any additional logic or debug statements here
+            Debug.Log("API data updated at: " + Time.time);
+        }
+>>>>>>> origin/ìž¬í˜„(ë‚´êº¼)
     }
 
     IEnumerator GetApiData()
     {
-        
-        apiUrl = $"http://apis.data.go.kr/1390000/SmartFarmdata/envdatarqst?serviceKey=ndExmAZPa6Z1SBWydoZsH8RFcdL6XjiFlmZ4Qe0LVdu6WyGJJpkvYMB5ecMII4AIXi0P%2BYcuqLKslBw6ILFgbA%3D%3D&searchFrmhsCode={formid}&returnType=json";
         using (UnityWebRequest webRequest = UnityWebRequest.Get(apiUrl))
         {
             yield return webRequest.SendWebRequest();
@@ -87,20 +108,24 @@ public class ApiManager : MonoBehaviour
                     InTpValue = measurementItem.inTp;
                     InHdValue = measurementItem.inHd;
                     FrmhsIdValue = measurementItem.frmhsId;
-                    OutWsValue = measurementItem.outWs;
-                    MeasDtSrValue = measurementItem.measDtStr; // ¼öÁ¤: º¯¼ö¸íÀ» ¸ÂÃã
-                    OutTpValue = measurementItem.outTp;
-                    InCo2Value = measurementItem.inCo2;
+                    CuntValue = measurementItem.cunt;
+                    OutWsValue = measurementItem.outWs;          // Assign the new value
+                    DaysuplyqyValue = measurementItem.daysuplyqy; // Assign the new value
 
-                    Debug.Log($"inTp: {InTpValue}, inHd: {InHdValue}, frmhsId: {FrmhsIdValue}, measDtStr: {MeasDtSrValue}, outWs: {OutWsValue}, outTp: {OutTpValue}, inCo2: {InCo2Value}");
+                    Debug.Log($"inTp: {InTpValue}, inHd: {InHdValue}, frmhsId: {FrmhsIdValue}, cunt: {CuntValue}, outWs: {OutWsValue}, daysuplyqy: {DaysuplyqyValue}");
 
-                    displayText.text = $"³»ºÎ¿Âµµ: {InTpValue}\n³»ºÎ½Àµµ: {InHdValue}\n³ó°¡ÄÚµå: {FrmhsIdValue}\nÃøÁ¤ ½Ã°£: {MeasDtSrValue}\n¿ÜºÎ Ç³¼Ó: {OutWsValue}\n¿ÜºÎ¿Âµµ: {OutTpValue}\n³»ºÎ ÀÌ»êÈ­Åº¼Ò: {InCo2Value}";
+                    displayText.text = $"³»ºÎ¿Âµµ: {InTpValue}\n³»ºÎ½Àµµ: {InHdValue}\n³ó°¡ÄÚµå: {FrmhsIdValue}\nÀÏ ±Þ¾×È½¼ö: {CuntValue}\n¿ÜºÎ Ç³¼Ó: {OutWsValue}\nÀÏ °ø±Þ·®: {DaysuplyqyValue}";
                 }
             }
         }
     }
+<<<<<<< HEAD
     public void OnClickButton()
     {
         StartCoroutine(GetApiData());
     }
 }
+=======
+}
+*/
+>>>>>>> origin/ìž¬í˜„(ë‚´êº¼)
