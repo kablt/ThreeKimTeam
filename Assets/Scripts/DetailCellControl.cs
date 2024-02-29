@@ -39,18 +39,7 @@ public class DetailCellControl : MonoBehaviour
 
     public void OnClickCloseButton()
     {
-        // Scene에 있는 UI 오브젝트들을 찾아서 활성화
-        GameObject parentDropdown = GameObject.Find("parentDropdown");
-        if (parentDropdown != null) parentDropdown.SetActive(true);
-
-        GameObject childDropdown = GameObject.Find("childDropdown");
-        if (childDropdown != null) childDropdown.SetActive(true);
-
-        GameObject scrollView = GameObject.Find("Scroll_View");
-        if (scrollView != null) scrollView.SetActive(true);
-
-        GameObject searchButton = GameObject.Find("SearchButton");
-        if (searchButton != null) searchButton.SetActive(true);
+        DropdownManager.ActiveButton = true;
         Destroy(gameObject);
     }
 

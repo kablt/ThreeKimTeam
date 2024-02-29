@@ -8,6 +8,8 @@ public class DropdownManager : MonoBehaviour
 {
     public TMP_Dropdown parentDropdown; // Parent Dropdown 변수
     public TMP_Dropdown childDropdown;  // Child Dropdown 변수
+    public static bool ActiveButton = true;
+    public GameObject target;
 
     // Parent Dropdown에서 선택한 옵션에 따라 Child Dropdown의 옵션을 업데이트하는 함수
     public void UpdateChildDropdownOptions()
@@ -49,6 +51,23 @@ public class DropdownManager : MonoBehaviour
 
         // 초기에도 한번은 호출하여 Child Dropdown을 업데이트
         UpdateChildDropdownOptions();
+    }
+
+    public void ActiveControl()
+    {
+        if(ActiveButton !=false)
+        {
+            target.SetActive(true);
+        }
+        if(ActiveButton == false)
+        {
+            target.SetActive(false);
+        }
+    }
+
+    private void Update()
+    {
+        ActiveControl();
     }
 }
 

@@ -63,7 +63,8 @@ public class CellController : MonoBehaviour
     private string apiUrl;
     public string formid;
     Canvas canvas;
-
+    
+   
 
 
 
@@ -106,6 +107,7 @@ public class CellController : MonoBehaviour
     {
         // 스크립트에서 Scroll View 찾아서 할당
         canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+   
     }
 
     public void Update()
@@ -180,12 +182,12 @@ public class CellController : MonoBehaviour
                         break;
                 }
             }
+        DropdownManager.ActiveButton = false;
         }
     }
     public void OnClickButton()
     {
         formid = noText.text;
-        // Fetch API data when the button is clicked
         StartCoroutine(GetApiData());
         // Instantiate the detailPanel prefab
 
