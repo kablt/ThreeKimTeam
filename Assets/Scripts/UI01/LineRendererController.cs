@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using UnityEngine.UI;
 
 public class LineRendererController : MonoBehaviour
 {
@@ -13,8 +14,9 @@ public class LineRendererController : MonoBehaviour
     public float interval = 5f; // 선을 생성할 간격
 
     // 추가된 부분: 점의 속성
-    public GameObject pointPrefab; // 점 프리팹
+    //public GameObject pointPrefab; // 점 프리팹
     public Color pointColor = Color.red;
+    public RawImage imagePrefab;
 
     void Start()
     {
@@ -37,14 +39,24 @@ public class LineRendererController : MonoBehaviour
 
     void SetInitialPositions()
     {
+        //for (int i = 0; i < positions.Count; i++)
+        //{
+        //    lineRenderer.SetPosition(i, positions[i]); // LineRenderer의 초기 위치 설정
+
+        //    // 추가된 부분: 각 포지션에 점 생성
+        //    GameObject point = Instantiate(pointPrefab, positions[i], Quaternion.identity);
+        //    point.GetComponent<Renderer>().material.color = pointColor; // 점의 색상 설정
+        //}
+
         for (int i = 0; i < positions.Count; i++)
         {
             lineRenderer.SetPosition(i, positions[i]); // LineRenderer의 초기 위치 설정
 
             // 추가된 부분: 각 포지션에 점 생성
-            GameObject point = Instantiate(pointPrefab, positions[i], Quaternion.identity);
-            point.GetComponent<Renderer>().material.color = pointColor; // 점의 색상 설정
+            RawImage point = Instantiate(imagePrefab, positions[i], Quaternion.identity);
+            //point.color = pointColor; // 점의 색상 설정
         }
+
     }
 
     void ReadCSV()

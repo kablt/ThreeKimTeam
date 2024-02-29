@@ -1166,11 +1166,6 @@ MonoBehaviour:
   detailPanel: {fileID: 7107153204709320215, guid: 4f21bfdd8f3369a43ae05e40de17df9d,
     type: 3}
   formid: 
-  uiElementsToDisable:
-  - parentDropdown
-  - childDropdown
-  - Scroll_View
-  - SearchButton
 --- !u!114 &8875539953030602116
 MonoBehaviour:
   m_ObjectHideFlags: 0
