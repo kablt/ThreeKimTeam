@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DictionarySample : MonoBehaviour
 {
+    /*
     // 셀이 만들어질 Trasform 값과 가져올 프리팹 GameObject를 SerializeField로 추가
     [SerializeField] Transform content;
     [SerializeField] GameObject cellPrefab;
@@ -71,5 +72,5 @@ public class DictionarySample : MonoBehaviour
         */
 
     }
-
+    */
 }
