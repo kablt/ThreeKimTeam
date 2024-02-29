@@ -2,12 +2,11 @@ using UnityEngine;
 using UnityEngine.Networking;
 using System.Collections;
 using TMPro;
-<<<<<<< HEAD
 using System;
 
-=======
+
 /*
->>>>>>> origin/재현(내꺼)
+>>>>>>> origin/?�현(?�꺼)
 [System.Serializable]
 public class MeasurementItem
 {
@@ -50,7 +49,7 @@ public class ApiManager : MonoBehaviour
     
 =======
     private string apiUrl = "http://apis.data.go.kr/1390000/SmartFarmdata/envdatarqst?serviceKey=ndExmAZPa6Z1SBWydoZsH8RFcdL6XjiFlmZ4Qe0LVdu6WyGJJpkvYMB5ecMII4AIXi0P%2BYcuqLKslBw6ILFgbA%3D%3D&searchFrmhsCode=81&returnType=json";
->>>>>>> origin/재현(내꺼)
+>>>>>>> origin/?�현(?�꺼)
 
     // Public properties to access values
     public float InTpValue { get; private set; }
@@ -83,7 +82,7 @@ public class ApiManager : MonoBehaviour
             // Optionally, you can add any additional logic or debug statements here
             Debug.Log("API data updated at: " + Time.time);
         }
->>>>>>> origin/재현(내꺼)
+>>>>>>> origin/?�현(?�꺼)
     }
 
     IEnumerator GetApiData()
@@ -128,4 +127,4 @@ public class ApiManager : MonoBehaviour
 =======
 }
 */
->>>>>>> origin/재현(내꺼)
+

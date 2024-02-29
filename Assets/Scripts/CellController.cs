@@ -48,9 +48,8 @@ public class CellController : MonoBehaviour
     [SerializeField] TextMeshProUGUI noText;
     [SerializeField] TextMeshProUGUI speciesText;
     [SerializeField] TextMeshProUGUI companyText;
-<<<<<<< HEAD
     DataDisplay display;
-=======
+
     [SerializeField] GameObject detailPanel;
 
 
@@ -71,7 +70,7 @@ public class CellController : MonoBehaviour
 
 
 
->>>>>>> origin/재현(내꺼)
+
 
     void Awake()
     {
