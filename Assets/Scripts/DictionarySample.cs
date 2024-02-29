@@ -69,8 +69,9 @@ public class DictionarySample : MonoBehaviour
         GameObject cellObject5 = Instantiate(cellPrefab, content);
         CellController cellController5 = cellObject5.GetComponent<CellController>(); //CellController를 불러오기
         cellController5.SetData(corp5); //corp5 전달
+    }
         */
 
-    }
-    */
+    
+    
 }
