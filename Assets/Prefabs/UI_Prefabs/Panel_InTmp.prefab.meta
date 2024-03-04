@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Prefabs/UI_Prefabs/Panel_InTmp.prefab.meta
 guid: f2fd6047aaaf62f45b338878c2882112
 PrefabImporter:
+========
+guid: 5e5c1782e60a12446b40ec6daa30c0aa
+NativeFormatImporter:
+>>>>>>>> origin/기령누님:Assets/Font/NotoSansKR-Bold SDF.asset.meta
   externalObjects: {}
+  mainObjectFileID: 11400000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
