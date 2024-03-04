@@ -16,9 +16,10 @@ public class DetailCellControl : MonoBehaviour
     public CellController cellControl;
 
 
+
 //그래프 슬라이더의 Value값에 지정된 변수 넣기
 
-public void SetData(CellController cellcontrol)
+    public void SetData(CellController cellcontrol)
     {
         this.cellControl = cellcontrol; // 저장된 CellController를 유지
 
@@ -28,6 +29,7 @@ public void SetData(CellController cellcontrol)
         measDtStr.text = cellcontrol.MeasDtSrValue10;
         outWs.text = cellcontrol.OutWsValue10.ToString();
         outTp.text = cellcontrol.OutTpValue10.ToString(); 
+       
      
 
     }
@@ -50,15 +52,21 @@ public void SetData(CellController cellcontrol)
         Destroy(gameObject);
     }
 
+    public void OnClickChangeOne()
+    {
+        //cellcontroller에서 저장된값 static로 선언 
+        inTp.text = "아왜안넘어와" + CellController.InTpValue1;
+        inHd.text = "55";
+        outWs.text = "88";
+    }
+
     void Start()
     {
-
+        
     }
 
     void Update()
     {
-      
-    
+        
     }
-
 }
