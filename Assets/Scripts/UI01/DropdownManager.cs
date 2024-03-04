@@ -8,6 +8,8 @@ public class DropdownManager : MonoBehaviour
 {
     public TMP_Dropdown parentDropdown; // Parent Dropdown 변수
     public TMP_Dropdown childDropdown;  // Child Dropdown 변수
+    public static bool ActiveButton = true;
+    public GameObject target;
 
     // Parent Dropdown에서 선택한 옵션에 따라 Child Dropdown의 옵션을 업데이트하는 함수
     public void UpdateChildDropdownOptions()
@@ -16,7 +18,7 @@ public class DropdownManager : MonoBehaviour
         switch (parentDropdown.value)
         {
             case 0: // 선택하기 전
-                SetChildDropdownOptions(new string[] { "지역을 선택해주세요." });
+                SetChildDropdownOptions(new string[] { "지역(시/군)" });
                 break;
             case 1: // 경남 선택한 경우
                 SetChildDropdownOptions(new string[] { "김해", "사천", "창녕", "함안" });
@@ -49,6 +51,23 @@ public class DropdownManager : MonoBehaviour
 
         // 초기에도 한번은 호출하여 Child Dropdown을 업데이트
         UpdateChildDropdownOptions();
+    }
+
+    public void ActiveControl()
+    {
+        if(ActiveButton !=false)
+        {
+            target.SetActive(true);
+        }
+        if(ActiveButton == false)
+        {
+            target.SetActive(false);
+        }
+    }
+
+    private void Update()
+    {
+        ActiveControl();
     }
 }
 
