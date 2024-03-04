@@ -28,8 +28,8 @@ public void SetData(CellController cellcontrol)
         measDtStr.text = cellcontrol.MeasDtSrValue10;
         outWs.text = cellcontrol.OutWsValue10.ToString();
         outTp.text = cellcontrol.OutTpValue10.ToString(); 
-       
-    
+     
+
     }
 
     public void UpdateData()
@@ -41,7 +41,7 @@ public void SetData(CellController cellcontrol)
         measDtStr.text = cellControl.MeasDtSrValue10;
         outWs.text = cellControl.OutWsValue10.ToString();
         outTp.text = cellControl.OutTpValue10.ToString();
-      
+    
     }
 
     public void OnClickCloseButton()
@@ -53,11 +53,11 @@ public void SetData(CellController cellcontrol)
     void Start()
     {
 
-        
     }
 
     void Update()
     {
+      
     
     }
 

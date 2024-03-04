@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 500480521868881573}
   - component: {fileID: 5570334599963167554}
   m_Layer: 5
-  m_Name: Slider (4)
+  m_Name: Slider 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -653,7 +653,7 @@ GameObject:
   - component: {fileID: 1982227656931798145}
   - component: {fileID: 707638105814306434}
   m_Layer: 5
-  m_Name: Slider (3)
+  m_Name: Slider 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -743,7 +743,7 @@ GameObject:
   - component: {fileID: 156940759805969958}
   - component: {fileID: 9196764344352504084}
   m_Layer: 5
-  m_Name: Slider (6)
+  m_Name: Slider 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -974,7 +974,7 @@ GameObject:
   - component: {fileID: 6177281657025131882}
   - component: {fileID: 824411312373665210}
   m_Layer: 5
-  m_Name: Slider (1)
+  m_Name: Slider 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1811,7 +1811,7 @@ GameObject:
   - component: {fileID: 7143526403066141328}
   - component: {fileID: 1006675258472715055}
   m_Layer: 5
-  m_Name: Slider (8)
+  m_Name: Slider 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1901,7 +1901,7 @@ GameObject:
   - component: {fileID: 7997649378800654315}
   - component: {fileID: 6928339274549133036}
   m_Layer: 5
-  m_Name: Slider (9)
+  m_Name: Slider 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2066,7 +2066,7 @@ GameObject:
   - component: {fileID: 4188048961097799148}
   - component: {fileID: 71744226529541570}
   m_Layer: 5
-  m_Name: Slider (5)
+  m_Name: Slider 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2917,7 +2917,7 @@ GameObject:
   - component: {fileID: 1787696001254000674}
   - component: {fileID: 1736768561434248787}
   m_Layer: 5
-  m_Name: Slider (2)
+  m_Name: Slider 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3043,7 +3043,7 @@ GameObject:
   - component: {fileID: 6264405300337472694}
   - component: {fileID: 8071946255553835701}
   m_Layer: 5
-  m_Name: Slider (7)
+  m_Name: Slider 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3319,7 +3319,7 @@ GameObject:
   - component: {fileID: 6365075039503007982}
   - component: {fileID: 8292106481220277634}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: Slider0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

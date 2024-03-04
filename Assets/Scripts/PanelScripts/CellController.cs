@@ -91,7 +91,6 @@ public string FrmhsIdValue { get; private set; }
     private string apiUrl;
     public string formid;
     Canvas canvas;
-    Slider slider;
 
     void Awake()
     {
@@ -146,6 +145,7 @@ public string FrmhsIdValue { get; private set; }
             {
                 string apiResponse = webRequest.downloadHandler.text;
                 JsonResponse jsonResponse = JsonUtility.FromJson<JsonResponse>(apiResponse);
+                Transform panelInTmp = detailPanel.transform.Find("Panel_InTmp");
 
                 for (int i = 0; i < jsonResponse.response.body.items.item.Length; i++)
                 {
@@ -219,8 +219,7 @@ public string FrmhsIdValue { get; private set; }
                                 Debug.LogWarning("Too many measurement items. Ignoring the excess items.");
                                 break;
                         }
-                    }
-                    Transform panelInTmp = detailPanel.transform.Find("Panel_InTmp");
+                             
 
                     if (panelInTmp != null)
                     {
@@ -230,28 +229,164 @@ public string FrmhsIdValue { get; private set; }
                         if (inTmpHorizontalLayout != null)
                         {
                             // InTmp_HorizontlaLayout이 가지고 있는 자식 오브젝트 중 이름이 "Slider"인 오브젝트 찾기
-                            Transform sliderTransform = inTmpHorizontalLayout.Find("Slider");
+                            Transform sliderTransforma = inTmpHorizontalLayout.Find("Slider0");
+                            Transform sliderTransformb = inTmpHorizontalLayout.Find("Slider1");
+                            Transform sliderTransformc = inTmpHorizontalLayout.Find("Slider2");
+                            Transform sliderTransformd = inTmpHorizontalLayout.Find("Slider3");
+                            Transform sliderTransforme = inTmpHorizontalLayout.Find("Slider4");
+                            Transform sliderTransformf = inTmpHorizontalLayout.Find("Slider5");
+                            Transform sliderTransformg = inTmpHorizontalLayout.Find("Slider6");
+                            Transform sliderTransformh = inTmpHorizontalLayout.Find("Slider7");
+                            Transform sliderTransformi = inTmpHorizontalLayout.Find("Slider8");
+                            Transform sliderTransformj = inTmpHorizontalLayout.Find("Slider9");
 
-                            if (sliderTransform != null)
-                            {
+                             if (sliderTransforma != null)
+                             {
                                 // Slider 컴포넌트 가져오기 (예: Slider 컴포넌트로 값을 조작하거나 이벤트를 연결할 수 있음)
-                                Slider sliderComponent = sliderTransform.GetComponent<Slider>();
+                                Slider sliderComponent = sliderTransforma.GetComponent<Slider>();
 
                                 if (sliderComponent != null)
                                 {
-                                    sliderComponent.value = InTpValue10;
-                                    Debug.Log($"slidervalue : {sliderComponent.value}");
+                                    sliderComponent.value = InTpValue1;
+                                    Debug.Log(sliderComponent.value);
+                                }
+                                else
+                                {
+                                    Debug.LogError("Slider 컴포넌트를 찾을 수 없습니다.");
+                                }
+                             }
+                            if (sliderTransformb != null)
+                            {
+                                // Slider 컴포넌트 가져오기 (예: Slider 컴포넌트로 값을 조작하거나 이벤트를 연결할 수 있음)
+                                Slider sliderComponent1 = sliderTransformb.GetComponent<Slider>();
+                                if (sliderComponent1 != null)
+                                {
+                                    sliderComponent1.value = InTpValue2;
+                                    Debug.Log(sliderComponent1.value);
                                 }
                                 else
                                 {
                                     Debug.LogError("Slider 컴포넌트를 찾을 수 없습니다.");
                                 }
                             }
-                            else
-                            {
-                                Debug.LogError("InTmp_HorizontlaLayout을 찾을 수 없습니다.");
+                                if (sliderTransformc != null)
+                                {
+                                    // Slider 컴포넌트 가져오기 (예: Slider 컴포넌트로 값을 조작하거나 이벤트를 연결할 수 있음)
+                                    Slider sliderComponent2 = sliderTransformc.GetComponent<Slider>();
+
+                                    if (sliderComponent2 != null)
+                                    {
+                                        sliderComponent2.value = InTpValue3;
+                                        Debug.Log(sliderComponent2.value);
+                                    }
+                                    else
+                                    {
+                                        Debug.LogError("Slider 컴포넌트를 찾을 수 없습니다.");
+                                    }
+                                }
+                                if (sliderTransformd != null)
+                                {
+                                    // Slider 컴포넌트 가져오기 (예: Slider 컴포넌트로 값을 조작하거나 이벤트를 연결할 수 있음)
+                                    Slider sliderComponent3 = sliderTransformd.GetComponent<Slider>();
+                                    if (sliderComponent3 != null)
+                                    {
+                                        sliderComponent3.value = InTpValue4;
+                                        Debug.Log(sliderComponent3.value);
+                                    }
+                                    else
+                                    {
+                                        Debug.LogError("Slider 컴포넌트를 찾을 수 없습니다.");
+                                    }
+                                }
+                                if (sliderTransforme != null)
+                                {
+                                    // Slider 컴포넌트 가져오기 (예: Slider 컴포넌트로 값을 조작하거나 이벤트를 연결할 수 있음)
+                                    Slider sliderComponent4 = sliderTransforme.GetComponent<Slider>();
+
+                                    if (sliderComponent4 != null)
+                                    {
+                                        sliderComponent4.value = InTpValue5;
+                                        Debug.Log(sliderComponent4.value);
+                                    }
+                                    else
+                                    {
+                                        Debug.LogError("Slider 컴포넌트를 찾을 수 없습니다.");
+                                    }
+                                }
+                                if (sliderTransformf != null)
+                                {
+                                    // Slider 컴포넌트 가져오기 (예: Slider 컴포넌트로 값을 조작하거나 이벤트를 연결할 수 있음)
+                                    Slider sliderComponent5 = sliderTransformf.GetComponent<Slider>();
+                                    if (sliderComponent5 != null)
+                                    {
+                                        sliderComponent5.value = InTpValue6;
+                                        Debug.Log(sliderComponent5.value);
+                                    }
+                                    else
+                                    {
+                                        Debug.LogError("Slider 컴포넌트를 찾을 수 없습니다.");
+                                    }
+                                }
+                                if (sliderTransformg != null)
+                                {
+                                    // Slider 컴포넌트 가져오기 (예: Slider 컴포넌트로 값을 조작하거나 이벤트를 연결할 수 있음)
+                                    Slider sliderComponent6 = sliderTransformg.GetComponent<Slider>();
+
+                                    if (sliderComponent6 != null)
+                                    {
+                                        sliderComponent6.value = InTpValue7;
+                                        Debug.Log(sliderComponent6.value);
+                                    }
+                                    else
+                                    {
+                                        Debug.LogError("Slider 컴포넌트를 찾을 수 없습니다.");
+                                    }
+                                }
+                                if (sliderTransformh != null)
+                                {
+                                    // Slider 컴포넌트 가져오기 (예: Slider 컴포넌트로 값을 조작하거나 이벤트를 연결할 수 있음)
+                                    Slider sliderComponent7 = sliderTransformh.GetComponent<Slider>();
+                                    if (sliderComponent7 != null)
+                                    {
+                                        sliderComponent7.value = InTpValue8;
+                                        Debug.Log(sliderComponent7.value);
+                                    }
+                                    else
+                                    {
+                                        Debug.LogError("Slider 컴포넌트를 찾을 수 없습니다.");
+                                    }
+                                }
+                                if (sliderTransformi != null)
+                                {
+                                    // Slider 컴포넌트 가져오기 (예: Slider 컴포넌트로 값을 조작하거나 이벤트를 연결할 수 있음)
+                                    Slider sliderComponent8 = sliderTransformi.GetComponent<Slider>();
+
+                                    if (sliderComponent8 != null)
+                                    {
+                                        sliderComponent8.value = InTpValue9;
+                                        Debug.Log(sliderComponent8.value);
+                                    }
+                                    else
+                                    {
+                                        Debug.LogError("Slider 컴포넌트를 찾을 수 없습니다.");
+                                    }
+                                }
+                                if (sliderTransformj != null)
+                                {
+                                    // Slider 컴포넌트 가져오기 (예: Slider 컴포넌트로 값을 조작하거나 이벤트를 연결할 수 있음)
+                                    Slider sliderComponent9 = sliderTransformj.GetComponent<Slider>();
+                                    if (sliderComponent9 != null)
+                                    {
+                                        sliderComponent9.value = InTpValue10;
+                                        Debug.Log(sliderComponent9.value);
+                                    }
+                                    else
+                                    {
+                                        Debug.LogError("Slider 컴포넌트를 찾을 수 없습니다.");
+                                    }
+                                }
+
                             }
-                        }
                         else
                         {
                             Debug.LogError("Panel_InTmp의 자식 오브젝트 'InTmp_HorizontlaLayout'을 찾을 수 없습니다.");
@@ -260,6 +395,7 @@ public string FrmhsIdValue { get; private set; }
                     else
                     {
                         Debug.LogError("detailPanel의 자식 오브젝트 'Panel_InTmp'을 찾을 수 없습니다.");
+                    }
                     }
                     
                 }
