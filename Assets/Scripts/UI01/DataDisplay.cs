@@ -63,6 +63,7 @@ public class DataDisplay : MonoBehaviour
             GameObject cellObject = Instantiate(cellPrefab, content);
             SetCellData(cellObject, data);
         }
+
     }
 
     void SetCellData(GameObject cellObject, FarmData data)

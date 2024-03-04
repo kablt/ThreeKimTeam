@@ -52,79 +52,79 @@ public class CellController : MonoBehaviour
 
 
     //받아온 데이터 디테일 패널에 쓰기위해 저장. 위에건 마지막에 불러온 10번째 데이터
-    public string FrmhsIdValue { get; private set; }
-    public float OutWsValue10 { get; private set; }
-    public float OutTpValue10 { get; private set; }
-    public float InCo2Value10 { get; private set; }
-    public float InTpValue10 { get; private set; }
-    public float InHdValue10 { get; private set; }
-    public string MeasDtSrValue10 { get; private set; }
+    public static string FrmhsIdValue { get; private set; }
+    public static float OutWsValue10 { get; private set; }
+    public static float OutTpValue10 { get; private set; }
+    public static float InCo2Value10 { get; private set; }
+    public static float InTpValue10 { get; private set; }
+    public static float InHdValue10 { get; private set; }
+    public static string MeasDtSrValue10 { get; private set; }
     //첫번째 부터 아홉번째 데이터 까지 내부온도,내부습도,측정일시 3가지 데이터 저장.(그래프에 사용하기위해)
     /// <summary>
     /// 아래 value1 staitc선언으로 값전달. 이후나머지것들도 static로 만들면 되긴할듯
     /// </summary>
     public static float InTpValue1 { get; private set; }
-    public float InTpValue2 { get; private set; }
-    public float InTpValue3 { get; private set; }
-    public float InTpValue4 { get; private set; }
-    public float InTpValue5 { get; private set; }
-    public float InTpValue6 { get; private set; }
-    public float InTpValue7 { get; private set; }
-    public float InTpValue8 { get; private set; }
-    public float InTpValue9 { get; private set; }
-    public float InHdValue1 { get; private set; }
-    public float InHdValue2 { get; private set; }
-    public float InHdValue3 { get; private set; }
-    public float InHdValue4 { get; private set; }
-    public float InHdValue5 { get; private set; }
-    public float InHdValue6 { get; private set; }
-    public float InHdValue7 { get; private set; }
-    public float InHdValue8 { get; private set; }
-    public float InHdValue9 { get; private set; }
-    public string MeasDtSrValue1 { get; private set; }
-    public string MeasDtSrValue2 { get; private set; }
-    public string MeasDtSrValue3 { get; private set; }
-    public string MeasDtSrValue4 { get; private set; }
-    public string MeasDtSrValue5 { get; private set; }
-    public string MeasDtSrValue6 { get; private set; }
-    public string MeasDtSrValue7 { get; private set; }
-    public string MeasDtSrValue8 { get; private set; }
-    public string MeasDtSrValue9 { get; private set; }
+    public static float InTpValue2 { get; private set; }
+    public static float InTpValue3 { get; private set; }
+    public static float InTpValue4 { get; private set; }
+    public static float InTpValue5 { get; private set; }
+    public static float InTpValue6 { get; private set; }
+    public static float InTpValue7 { get; private set; }
+    public static float InTpValue8 { get; private set; }
+    public static float InTpValue9 { get; private set; }
+    public static float InHdValue1 { get; private set; }
+    public static float InHdValue2 { get; private set; }
+    public static float InHdValue3 { get; private set; }
+    public static float InHdValue4 { get; private set; }
+    public static float InHdValue5 { get; private set; }
+    public static float InHdValue6 { get; private set; }
+    public static float InHdValue7 { get; private set; }
+    public static float InHdValue8 { get; private set; }
+    public static float InHdValue9 { get; private set; }
+    public static string MeasDtSrValue1 { get; private set; }
+    public static string MeasDtSrValue2 { get; private set; }
+    public static string MeasDtSrValue3 { get; private set; }
+    public static string MeasDtSrValue4 { get; private set; }
+    public static string MeasDtSrValue5 { get; private set; }
+    public static string MeasDtSrValue6 { get; private set; }
+    public static string MeasDtSrValue7 { get; private set; }
+    public static string MeasDtSrValue8 { get; private set; }
+    public static string MeasDtSrValue9 { get; private set; }
 
-    public float OutWsValue1 { get; private set; }
-    public float OutWsValue2 { get; private set; }
-    public float OutWsValue3 { get; private set; }
-    public float OutWsValue4 { get; private set; }
-    public float OutWsValue5 { get; private set; }
-    public float OutWsValue6 { get; private set; }
-    public float OutWsValue7 { get; private set; }
-    public float OutWsValue8 { get; private set; }
-    public float OutWsValue9 { get; private set; }
+    public static float OutWsValue1 { get; private set; }
+    public static float OutWsValue2 { get; private set; }
+    public static float OutWsValue3 { get; private set; }
+    public static float OutWsValue4 { get; private set; }
+    public static float OutWsValue5 { get; private set; }
+    public static float OutWsValue6 { get; private set; }
+    public static float OutWsValue7 { get; private set; }
+    public static float OutWsValue8 { get; private set; }
+    public static float OutWsValue9 { get; private set; }
 
-    public float OutTpValue1 { get; private set; }
-    public float OutTpValue2 { get; private set; }
-    public float OutTpValue3 { get; private set; }
-    public float OutTpValue4 { get; private set; }
-    public float OutTpValue5 { get; private set; }
-    public float OutTpValue6 { get; private set; }
-    public float OutTpValue7 { get; private set; }
-    public float OutTpValue8 { get; private set; }
-    public float OutTpValue9 { get; private set; }
+    public static float OutTpValue1 { get; private set; }
+    public static float OutTpValue2 { get; private set; }
+    public static float OutTpValue3 { get; private set; }
+    public static float OutTpValue4 { get; private set; }
+    public static float OutTpValue5 { get; private set; }
+    public static float OutTpValue6 { get; private set; }
+    public static float OutTpValue7 { get; private set; }
+    public static float OutTpValue8 { get; private set; }
+    public static float OutTpValue9 { get; private set; }
 
-    public float InCo2Value1 { get; private set; }
-    public float InCo2Value2 { get; private set; }
-    public float InCo2Value3 { get; private set; }
-    public float InCo2Value4 { get; private set; }
-    public float InCo2Value5 { get; private set; }
-    public float InCo2Value6 { get; private set; }
-    public float InCo2Value7 { get; private set; }
-    public float InCo2Value8 { get; private set; }
-    public float InCo2Value9 { get; private set; }
+    public static float InCo2Value1 { get; private set; }
+    public static float InCo2Value2 { get; private set; }
+    public static float InCo2Value3 { get; private set; }
+    public static float InCo2Value4 { get; private set; }
+    public static float InCo2Value5 { get; private set; }
+    public static float InCo2Value6 { get; private set; }
+    public static float InCo2Value7 { get; private set; }
+    public static float InCo2Value8 { get; private set; }
+    public static float InCo2Value9 { get; private set; }
     //농장코드별 데이터를 불러오기위한 변수 선언.Canvas는 디테일패널 생성위치를 위해 선언
     private string apiUrl;
     public string formid;
     Canvas canvas;
-    //디테일 패널 데이터를 바꾸기 위한 변수 선언
+    //디테일 생성시 바로 정보를 표기할 거라면 cell에서 변수를 만들어서 값을 넣어주자
  
 
     void Awake()
@@ -644,7 +644,7 @@ public class CellController : MonoBehaviour
 
                 TextMeshProUGUI[] textComponents = instantiatedPanel.GetComponentsInChildren<TextMeshProUGUI>();
 
-                // Update text values based on the fetched API data
+                /* 안쓰는 부분
                 foreach (TextMeshProUGUI textComponent in textComponents)
                 {
                     switch (textComponent.name)
@@ -655,15 +655,9 @@ public class CellController : MonoBehaviour
                         case "InHdText":
                             textComponent.text = $"InHd: {InHdValue10}";
                             break;
-                        case "FrmhsIdText":
-                            textComponent.text = $"FrmhsId: {FrmhsIdValue}";
-                            break;
                         case "OutWsText":
                             textComponent.text = $"OutWs: {OutWsValue10}";
-                            break;
-                        case "MeasDtStrText":
-                            textComponent.text = $"MeasDtStr: {MeasDtSrValue10}";
-                            break;
+                            break;               
                         case "OutTpText":
                             textComponent.text = $"OutTp: {OutTpValue10}";
                             break;
@@ -675,7 +669,7 @@ public class CellController : MonoBehaviour
                     }
                 }
                 DropdownManager.ActiveButton = false;
-                
+                */
             }
         }
     }
