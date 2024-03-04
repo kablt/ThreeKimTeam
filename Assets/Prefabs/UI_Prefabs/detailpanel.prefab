@@ -1185,7 +1185,6 @@ MonoBehaviour:
   inCo2: {fileID: 0}
   cellControl: {fileID: 670301446505882015, guid: e6191f68bb1e8fe448fde546e2ffb59a,
     type: 3}
-  slidertext: 
 --- !u!1 &7718568670230096738
 GameObject:
   m_ObjectHideFlags: 0
@@ -1332,12 +1331,12 @@ PrefabInstance:
     - target: {fileID: 71744226529541570, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
       propertyPath: m_MaxValue
-      value: 100
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 71744226529541570, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
       propertyPath: m_MinValue
-      value: -100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 156940759805969958, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
@@ -1407,12 +1406,12 @@ PrefabInstance:
     - target: {fileID: 707638105814306434, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
       propertyPath: m_MaxValue
-      value: 100
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 707638105814306434, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
       propertyPath: m_MinValue
-      value: -100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 764177078173175754, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
@@ -1432,22 +1431,22 @@ PrefabInstance:
     - target: {fileID: 824411312373665210, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
       propertyPath: m_MaxValue
-      value: 100
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 824411312373665210, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
       propertyPath: m_MinValue
-      value: -100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1006675258472715055, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
       propertyPath: m_MaxValue
-      value: 100
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1006675258472715055, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
       propertyPath: m_MinValue
-      value: -100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1492584583130968911, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
@@ -1462,12 +1461,12 @@ PrefabInstance:
     - target: {fileID: 1736768561434248787, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
       propertyPath: m_MaxValue
-      value: 100
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1736768561434248787, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
       propertyPath: m_MinValue
-      value: -100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1787696001254000674, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
@@ -1722,12 +1721,12 @@ PrefabInstance:
     - target: {fileID: 5570334599963167554, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
       propertyPath: m_MaxValue
-      value: 100
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 5570334599963167554, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
       propertyPath: m_MinValue
-      value: -100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5663264414369105538, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
@@ -1862,12 +1861,12 @@ PrefabInstance:
     - target: {fileID: 6928339274549133036, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
       propertyPath: m_MaxValue
-      value: 100
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 6928339274549133036, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
       propertyPath: m_MinValue
-      value: -100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7108313302538728815, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
@@ -1972,22 +1971,22 @@ PrefabInstance:
     - target: {fileID: 8071946255553835701, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
       propertyPath: m_MaxValue
-      value: 100
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 8071946255553835701, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
       propertyPath: m_MinValue
-      value: -100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8292106481220277634, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
       propertyPath: m_MaxValue
-      value: 100
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 8292106481220277634, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
       propertyPath: m_MinValue
-      value: -100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8307585549068680401, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
@@ -1997,12 +1996,12 @@ PrefabInstance:
     - target: {fileID: 9196764344352504084, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
       propertyPath: m_MaxValue
-      value: 100
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 9196764344352504084, guid: f2fd6047aaaf62f45b338878c2882112,
         type: 3}
       propertyPath: m_MinValue
-      value: -100
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
