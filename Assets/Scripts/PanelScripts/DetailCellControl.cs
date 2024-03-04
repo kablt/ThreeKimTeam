@@ -12,9 +12,8 @@ public class DetailCellControl : MonoBehaviour
     [SerializeField] TMP_Text measDtStr;
     [SerializeField] TMP_Text outWs;
     [SerializeField] TMP_Text outTp;
-    // [SerializeField] TMP_Text inCo2;
+    [SerializeField] TMP_Text inCo2;
     public CellController cellControl;
-    [SerializeField] Slider slider;
 
 
 //그래프 슬라이더의 Value값에 지정된 변수 넣기
@@ -28,9 +27,9 @@ public void SetData(CellController cellcontrol)
         frmhsId.text = cellcontrol.FrmhsIdValue;
         measDtStr.text = cellcontrol.MeasDtSrValue10;
         outWs.text = cellcontrol.OutWsValue10.ToString();
-        outTp.text = cellcontrol.OutTpValue10.ToString();
-        slider.value = cellcontrol.InTpValue10;
-        Debug.Log("B" + slider.value);
+        outTp.text = cellcontrol.OutTpValue10.ToString(); 
+       
+    
     }
 
     public void UpdateData()
@@ -42,7 +41,7 @@ public void SetData(CellController cellcontrol)
         measDtStr.text = cellControl.MeasDtSrValue10;
         outWs.text = cellControl.OutWsValue10.ToString();
         outTp.text = cellControl.OutTpValue10.ToString();
-        slider.value = cellControl.InTpValue10;
+      
     }
 
     public void OnClickCloseButton()
@@ -53,15 +52,13 @@ public void SetData(CellController cellcontrol)
 
     void Start()
     {
-        Debug.Log("A" + inTp.text);
-        Debug.Log("A" + slider.value);
-        Debug.Log("A" + slider.value);
+
+        
     }
 
     void Update()
     {
-
+    
     }
-
 
 }

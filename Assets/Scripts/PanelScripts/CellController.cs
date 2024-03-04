@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using Slider = UnityEngine.UI.Slider;
 
 [System.Serializable]
 public class MeasurementItem
@@ -47,6 +48,7 @@ public class CellController : MonoBehaviour
     [SerializeField] TextMeshProUGUI speciesText;
     [SerializeField] TextMeshProUGUI companyText;
     [SerializeField] GameObject detailPanel;
+    
 
 
 //받아온 데이터 디테일 패널에 쓰기위해 저장. 위에건 마지막에 불러온 10번째 데이터
@@ -89,6 +91,7 @@ public string FrmhsIdValue { get; private set; }
     private string apiUrl;
     public string formid;
     Canvas canvas;
+    Slider slider;
 
     void Awake()
     {
@@ -119,7 +122,7 @@ public string FrmhsIdValue { get; private set; }
     {
         // 스크립트에서 Scroll View 찾아서 할당
         canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
-
+  
     }
 
     public void Update()
@@ -130,7 +133,7 @@ public string FrmhsIdValue { get; private set; }
     IEnumerator GetApiData()
     {
 
-        apiUrl = $"<http://apis.data.go.kr/1390000/SmartFarmdata/envdatarqst?serviceKey=ndExmAZPa6Z1SBWydoZsH8RFcdL6XjiFlmZ4Qe0LVdu6WyGJJpkvYMB5ecMII4AIXi0P%2BYcuqLKslBw6ILFgbA%3D%3D&searchFrmhsCode={formid}&returnType=json>";
+        apiUrl = $"http://apis.data.go.kr/1390000/SmartFarmdata/envdatarqst?serviceKey=ndExmAZPa6Z1SBWydoZsH8RFcdL6XjiFlmZ4Qe0LVdu6WyGJJpkvYMB5ecMII4AIXi0P%2BYcuqLKslBw6ILFgbA%3D%3D&searchFrmhsCode={formid}&returnType=json";
         using (UnityWebRequest webRequest = UnityWebRequest.Get(apiUrl))
         {
             yield return webRequest.SendWebRequest();
@@ -217,6 +220,48 @@ public string FrmhsIdValue { get; private set; }
                                 break;
                         }
                     }
+                    Transform panelInTmp = detailPanel.transform.Find("Panel_InTmp");
+
+                    if (panelInTmp != null)
+                    {
+                        // Panel_InTmp이 가지고 있는 자식 오브젝트 중 이름이 "InTmp_HorizontlaLayout"인 오브젝트 찾기
+                        Transform inTmpHorizontalLayout = panelInTmp.Find("InTmp_HorizontlaLayout");
+
+                        if (inTmpHorizontalLayout != null)
+                        {
+                            // InTmp_HorizontlaLayout이 가지고 있는 자식 오브젝트 중 이름이 "Slider"인 오브젝트 찾기
+                            Transform sliderTransform = inTmpHorizontalLayout.Find("Slider");
+
+                            if (sliderTransform != null)
+                            {
+                                // Slider 컴포넌트 가져오기 (예: Slider 컴포넌트로 값을 조작하거나 이벤트를 연결할 수 있음)
+                                Slider sliderComponent = sliderTransform.GetComponent<Slider>();
+
+                                if (sliderComponent != null)
+                                {
+                                    sliderComponent.value = InTpValue10;
+                                    Debug.Log($"slidervalue : {sliderComponent.value}");
+                                }
+                                else
+                                {
+                                    Debug.LogError("Slider 컴포넌트를 찾을 수 없습니다.");
+                                }
+                            }
+                            else
+                            {
+                                Debug.LogError("InTmp_HorizontlaLayout을 찾을 수 없습니다.");
+                            }
+                        }
+                        else
+                        {
+                            Debug.LogError("Panel_InTmp의 자식 오브젝트 'InTmp_HorizontlaLayout'을 찾을 수 없습니다.");
+                        }
+                    }
+                    else
+                    {
+                        Debug.LogError("detailPanel의 자식 오브젝트 'Panel_InTmp'을 찾을 수 없습니다.");
+                    }
+                    
                 }
 
                 GameObject instantiatedPanel = Instantiate(detailPanel, canvas.transform);
@@ -254,6 +299,7 @@ public string FrmhsIdValue { get; private set; }
                     }
                 }
                 DropdownManager.ActiveButton = false;
+                Debug.Log($"value1 : {InTpValue1}, value : {InTpValue2}, value10 : {InTpValue10}");
             }
         }
     }
