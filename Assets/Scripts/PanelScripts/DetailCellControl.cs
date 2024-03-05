@@ -26,6 +26,16 @@ public class DetailCellControl : MonoBehaviour
     [SerializeField] TMP_Text mday8;
     [SerializeField] TMP_Text mday9;
     [SerializeField] TMP_Text mday10;
+    [SerializeField] TMP_Text hmday1;
+    [SerializeField] TMP_Text hmday2;
+    [SerializeField] TMP_Text hmday3;
+    [SerializeField] TMP_Text hmday4;
+    [SerializeField] TMP_Text hmday5;
+    [SerializeField] TMP_Text hmday6;
+    [SerializeField] TMP_Text hmday7;
+    [SerializeField] TMP_Text hmday8;
+    [SerializeField] TMP_Text hmday9;
+    [SerializeField] TMP_Text hmday10;
     public CellController cellControl;
     [SerializeField] GameObject exittap;
     [SerializeField] TMP_Text SunSideOutTp;
@@ -174,6 +184,16 @@ public class DetailCellControl : MonoBehaviour
         mday8.text = CellController.MeasDtSrValue8.Substring(8, 2);
         mday9.text = CellController.MeasDtSrValue9.Substring(8, 2);
         mday10.text = CellController.MeasDtSrValue10.Substring(8, 2);
+        hmday1.text = CellController.MeasDtSrValue1.Substring(8, 2);
+        hmday2.text = CellController.MeasDtSrValue2.Substring(8, 2);
+        hmday3.text = CellController.MeasDtSrValue3.Substring(8, 2);
+        hmday4.text = CellController.MeasDtSrValue4.Substring(8, 2);
+        hmday5.text = CellController.MeasDtSrValue5.Substring(8, 2);
+        hmday6.text = CellController.MeasDtSrValue6.Substring(8, 2);
+        hmday7.text = CellController.MeasDtSrValue7.Substring(8, 2);
+        hmday8.text = CellController.MeasDtSrValue8.Substring(8, 2);
+        hmday9.text = CellController.MeasDtSrValue9.Substring(8, 2);
+        hmday10.text = CellController.MeasDtSrValue10.Substring(8, 2);
     }
 
     public void ExitButton()
