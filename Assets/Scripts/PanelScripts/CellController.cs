@@ -125,7 +125,6 @@ public class CellController : MonoBehaviour
     public string formid;
     Canvas canvas;
     //디테일 생성시 바로 정보를 표기할 거라면 cell에서 변수를 만들어서 값을 넣어주자
- 
 
     void Awake()
     {
