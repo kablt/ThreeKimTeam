@@ -803,7 +803,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3945919897351568915}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6988066681031586537}
+        m_TargetAssemblyTypeName: DetailCellControl, Assembly-CSharp
+        m_MethodName: OnClickChangeOne
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 2
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &423880602674936473
 GameObject:
   m_ObjectHideFlags: 0
@@ -3613,7 +3625,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1248067238163912613}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6988066681031586537}
+        m_TargetAssemblyTypeName: DetailCellControl, Assembly-CSharp
+        m_MethodName: OnClickChangeOne
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 7
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1519730351467397544
 GameObject:
   m_ObjectHideFlags: 0
@@ -3752,7 +3776,7 @@ RectTransform:
   m_GameObject: {fileID: 1624570490671700622}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0707, y: 1.0707, z: 1.0707}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5368208191797657513}
@@ -5327,7 +5351,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0
+  m_FillAmount: 0.683
   m_FillClockwise: 1
   m_FillOrigin: 2
   m_UseSpriteMesh: 0
@@ -6142,7 +6166,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2511141625048995678}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6988066681031586537}
+        m_TargetAssemblyTypeName: DetailCellControl, Assembly-CSharp
+        m_MethodName: OnClickChangeOne
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 9
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2746705321137904429
 GameObject:
   m_ObjectHideFlags: 0
@@ -7534,7 +7570,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 9175909836624434699}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6988066681031586537}
+        m_TargetAssemblyTypeName: DetailCellControl, Assembly-CSharp
+        m_MethodName: OnClickChangeOne
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 10
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3168328231527600811
 GameObject:
   m_ObjectHideFlags: 0
@@ -9667,7 +9715,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6379487078576536419}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6988066681031586537}
+        m_TargetAssemblyTypeName: DetailCellControl, Assembly-CSharp
+        m_MethodName: OnClickChangeOne
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 3
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4041817293429945379
 GameObject:
   m_ObjectHideFlags: 0
@@ -10598,7 +10658,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3536228693614557759}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6988066681031586537}
+        m_TargetAssemblyTypeName: DetailCellControl, Assembly-CSharp
+        m_MethodName: OnClickChangeOne
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4486799035867502582
 GameObject:
   m_ObjectHideFlags: 0
@@ -13973,7 +14045,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 807b44c2f15c44e4c8c12d8bf72e36c2, type: 3}
+  m_Texture: {fileID: 2800000, guid: 6e782eb8fa611f84c9068f50e0052b8f, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -15359,7 +15431,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5026034294219254297}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6988066681031586537}
+        m_TargetAssemblyTypeName: DetailCellControl, Assembly-CSharp
+        m_MethodName: OnClickChangeOne
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6746445067637880000
 GameObject:
   m_ObjectHideFlags: 0
@@ -15516,7 +15600,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8755535661147872581}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6988066681031586537}
+        m_TargetAssemblyTypeName: DetailCellControl, Assembly-CSharp
+        m_MethodName: OnClickChangeOne
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 4
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6886699142202836407
 GameObject:
   m_ObjectHideFlags: 0
@@ -17940,7 +18036,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6860683710593653784}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6988066681031586537}
+        m_TargetAssemblyTypeName: DetailCellControl, Assembly-CSharp
+        m_MethodName: OnClickChangeOne
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 8
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8142670340955654483
 GameObject:
   m_ObjectHideFlags: 0
@@ -18137,7 +18245,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1000
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 683
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -19323,7 +19431,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8997276720509516371}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6988066681031586537}
+        m_TargetAssemblyTypeName: DetailCellControl, Assembly-CSharp
+        m_MethodName: OnClickChangeOne
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 6
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8830612375949680070
 GameObject:
   m_ObjectHideFlags: 0
