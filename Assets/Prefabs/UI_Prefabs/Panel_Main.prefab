@@ -20274,10 +20274,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inTp: {fileID: 7151238551211353571}
   inHd: {fileID: 875835630542165700}
-  frmhsId: {fileID: 0}
   outWs: {fileID: 9035916392692863391}
   outTp: {fileID: 4342799104904344700}
   inCo2: {fileID: 3070595987384589196}
+  LocalName: {fileID: 2716390915818897201}
   mday1: {fileID: 1553824201671662605}
   mday2: {fileID: 3454113192436527124}
   mday3: {fileID: 18935570856548932}
@@ -20295,7 +20295,6 @@ MonoBehaviour:
   RightUpDtr: {fileID: 4194826534596784947}
   Co2Slider: {fileID: 8329942576268614241}
   ymd: 
-  MainPanel: {fileID: 8233188174386740588}
 --- !u!1 &9077203708509384276
 GameObject:
   m_ObjectHideFlags: 0
@@ -20776,7 +20775,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC9C0\uC5ED \uC774\uB984"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f94d89d713c7fd84294664cbf492400f, type: 2}
   m_sharedMaterial: {fileID: -8999746664134514419, guid: f94d89d713c7fd84294664cbf492400f,

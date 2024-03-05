@@ -9,6 +9,7 @@ public class DataDisplay : MonoBehaviour
     public TextAsset csvFile; // Unity Editor에서 할당
     public RectTransform content; // Scroll View의 Content 객체
     public GameObject cellPrefab; // Cell 프리팹
+    public string ThrowLocalName;
 
     // Cell에 표시할 데이터를 저장하는 클래스
     private class FarmData
@@ -54,6 +55,7 @@ public class DataDisplay : MonoBehaviour
                 data.species = rowValues[4];
                 data.company = rowValues[5];
                 dataList.Add(data);
+                ThrowLocalName = selectedCity;
             }
         }
 

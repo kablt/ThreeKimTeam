@@ -3,16 +3,18 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.iOS;
 using UnityEngine.UI;
 
 public class DetailCellControl : MonoBehaviour
 {
     [SerializeField] TMP_Text inTp;
     [SerializeField] TMP_Text inHd;
-    [SerializeField] TMP_Text frmhsId;
     [SerializeField] TMP_Text outWs;
     [SerializeField] TMP_Text outTp;
     [SerializeField] TMP_Text inCo2;
+    //농장코드 파일로 비교해서 열기
+    [SerializeField] TMP_Text LocalName;
     //그래프 아래 버튼 측정일수
     [SerializeField] TMP_Text mday1;
     [SerializeField] TMP_Text mday2;
@@ -32,7 +34,7 @@ public class DetailCellControl : MonoBehaviour
     Canvas canvas;
     public string ymd;
     //co2패널 비활성화
-    public GameObject MainPanel;
+
 
 
     //그래프 슬라이더의 Value값에 지정된 변수 넣기
@@ -154,6 +156,7 @@ public class DetailCellControl : MonoBehaviour
 
     void Start()
     {
+        NameSetting();
         Co2Slider.value = 0f;
         ymd = CellController.MeasDtSrValue10.ToString();
         DropdownManager.ActiveButton = false;
@@ -181,5 +184,81 @@ public class DetailCellControl : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void NameSetting()
+    {
+        if(CellController.FrmhsIdValue == "50" || CellController.FrmhsIdValue == "51")
+        {
+            LocalName.text = "경남 김해";
+        }
+        else if(CellController.FrmhsIdValue == "48" || CellController.FrmhsIdValue == "59" || CellController.FrmhsIdValue == "344")
+        {
+            LocalName.text = "경남 사천";
+        }
+        else if (CellController.FrmhsIdValue == "53" || CellController.FrmhsIdValue == "54" || CellController.FrmhsIdValue == "57" || CellController.FrmhsIdValue == "345")
+        {
+            LocalName.text = "경남 창녕";
+        }
+        else if (CellController.FrmhsIdValue == "56" || CellController.FrmhsIdValue == "349" )
+        {
+            LocalName.text = "경남 함안";
+        }
+        else if (CellController.FrmhsIdValue == "45")
+        {
+            LocalName.text = "전남 강진";
+        }
+        else if (CellController.FrmhsIdValue == "37" || CellController.FrmhsIdValue == "203" )
+        {
+            LocalName.text = "전남 고흥";
+        }
+        else if (CellController.FrmhsIdValue == "39" || CellController.FrmhsIdValue == "339")
+        {
+            LocalName.text = "전남 담양";
+        }
+        else if (CellController.FrmhsIdValue == "43" || CellController.FrmhsIdValue == "44")
+        {
+            LocalName.text = "전남 보성";
+        }
+        else if (CellController.FrmhsIdValue == "42")
+        {
+            LocalName.text = "전남 장흥";
+        }
+        else if (CellController.FrmhsIdValue == "35" || CellController.FrmhsIdValue == "41" || CellController.FrmhsIdValue == "204" || CellController.FrmhsIdValue == "205" || CellController.FrmhsIdValue == "332")
+        {
+            LocalName.text = "전남 화순";
+        }
+        else if (CellController.FrmhsIdValue == "25")
+        {
+            LocalName.text = "전북 군산";
+        }
+        else if (CellController.FrmhsIdValue == "9" || CellController.FrmhsIdValue == "28" || CellController.FrmhsIdValue == "29" || CellController.FrmhsIdValue == "31" || CellController.FrmhsIdValue == "33"
+            || CellController.FrmhsIdValue == "201" || CellController.FrmhsIdValue == "202" 
+            || CellController.FrmhsIdValue == "316" || CellController.FrmhsIdValue == "319" || CellController.FrmhsIdValue == "320" || CellController.FrmhsIdValue == "324")
+        {
+            LocalName.text = "전북 김제";
+        }
+        else if (CellController.FrmhsIdValue == "21" || CellController.FrmhsIdValue == "27" || CellController.FrmhsIdValue == "210" || CellController.FrmhsIdValue == "315" || CellController.FrmhsIdValue == "318")
+        {
+            LocalName.text = "전북 완주";
+        }
+        else if (CellController.FrmhsIdValue == "81" || CellController.FrmhsIdValue == "206" || CellController.FrmhsIdValue == "207" || CellController.FrmhsIdValue == "326")
+        {
+            LocalName.text = "전북 익산";
+        }
+        else if (CellController.FrmhsIdValue == "209" || CellController.FrmhsIdValue == "327")
+        {
+            LocalName.text = "전북 정읍";
+        }
+        else if (CellController.FrmhsIdValue == "32" || CellController.FrmhsIdValue == "325")
+        {
+            LocalName.text = "전북 진안";
+        }
+        else
+        {
+            Debug.Log("등록되있지 않는 농가 입니다.");
+        }
+
+
     }
 }
