@@ -44,7 +44,7 @@ public class Items
 }
 public class CellController : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI noText;
+    [SerializeField] TextMeshProUGUI noText;//³ó°¡ÄÚµå
     [SerializeField] TextMeshProUGUI speciesText;
     [SerializeField] TextMeshProUGUI companyText;
     [SerializeField] GameObject detailPanel;
