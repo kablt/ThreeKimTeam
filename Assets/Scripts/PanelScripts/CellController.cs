@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
@@ -181,6 +183,46 @@ public class CellController : MonoBehaviour
                 JsonResponse jsonResponse = JsonUtility.FromJson<JsonResponse>(apiResponse);
                 Transform panelInTmp = detailPanel.transform.Find("Panel_InTmp");
                 Transform panelInHum  = detailPanel.transform.Find("Panel_InHum");
+                
+                bool success = false;
+
+                while (!success)
+                {
+                    try
+                    {
+                        // 예외가 발생할 수 있는 기존 코드
+                        if (jsonResponse.response != null &&
+                            jsonResponse.response.body != null &&
+                            jsonResponse.response.body.items != null &&
+                            jsonResponse.response.body.items.item != null)
+                        {
+                            // item 배열의 길이가 8개 이하인 경우 예외 처리
+                            if (jsonResponse.response.body.items.item.Length <= 8)
+                            {
+                                throw new System.Exception("item 배열의 길이가 8개 이하입니다.");
+                            }
+
+                            // item 배열의 길이가 8개를 초과하는 경우 실행할 코드 작성
+                            Debug.Log("item 배열의 길이가 8개를 초과합니다. 계속 진행합니다.");
+
+                            // 모든 것이 성공하면 성공 플래그를 true로 설정
+                            success = true;
+                        }
+                        else
+                        {
+                            // API 응답의 구조가 올바르지 않은 경우 예외 처리
+                            throw new System.Exception("API 응답의 구조가 올바르지 않습니다. response, body, items, item 중 하나가 null일 수 있습니다.");
+                        }
+                    }
+                    catch (System.Exception ex)
+                    {
+                        // 예외가 발생한 경우 처리할 코드
+                        Debug.LogError("예외 발생: " + ex.Message);
+
+                        // 선택적으로 재시도 전에 지연을 추가할 수 있습니다 (예: Thread.Sleep(milliseconds))
+                    }
+                }
+                
 
                 for (int i = 0; i < jsonResponse.response.body.items.item.Length; i++)
                 {
@@ -640,42 +682,13 @@ public class CellController : MonoBehaviour
                 }
 
                 GameObject instantiatedPanel = Instantiate(detailPanel, canvas.transform);
-
-                TextMeshProUGUI[] textComponents = instantiatedPanel.GetComponentsInChildren<TextMeshProUGUI>();
-
-                /* 안쓰는 부분
-                foreach (TextMeshProUGUI textComponent in textComponents)
-                {
-                    switch (textComponent.name)
-                    {
-                        case "InTpText":
-                            textComponent.text = $"InTp: {InTpValue10}";
-                            break;
-                        case "InHdText":
-                            textComponent.text = $"InHd: {InHdValue10}";
-                            break;
-                        case "OutWsText":
-                            textComponent.text = $"OutWs: {OutWsValue10}";
-                            break;               
-                        case "OutTpText":
-                            textComponent.text = $"OutTp: {OutTpValue10}";
-                            break;
-                        case "InCo2Text":
-                            textComponent.text = $"InCo2: {InCo2Value10}";
-                            break;
-                        default:
-                            break;
-                    }
-                }
-                DropdownManager.ActiveButton = false;
-                */
             }
         }
     }
 
     public void OnClickButton()
     {
-        formid = noText.text;
-        StartCoroutine(GetApiData());
+            formid = noText.text;
+            StartCoroutine(GetApiData());
     }
 }

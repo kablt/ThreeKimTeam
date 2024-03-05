@@ -58,7 +58,7 @@ public class DetailCellControl : MonoBehaviour
           
     public void OnClickChangeOne(float num)
     {
-  
+        
         if(num == 1)
         {
             //cellcontroller에서 저장된값 static로 선언 
@@ -262,7 +262,7 @@ public class DetailCellControl : MonoBehaviour
             LocalName.text = "전북 완주";
         }
         else if (CellController.FrmhsIdValue == "81" || CellController.FrmhsIdValue == "206" || CellController.FrmhsIdValue == "207" || CellController.FrmhsIdValue == "326")
-        {
+        {      
             LocalName.text = "전북 익산";
         }
         else if (CellController.FrmhsIdValue == "209" || CellController.FrmhsIdValue == "327")
