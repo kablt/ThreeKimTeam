@@ -44,83 +44,83 @@ public class DetailCellControl : MonoBehaviour
         if(num == 1)
         {
             //cellcontroller에서 저장된값 static로 선언 
-            inTp.text = "내부온도 :" + Mathf.Round(CellController.InTpValue1*10f)/10f;
-            inHd.text = "내부습도 :" + Mathf.Round(CellController.InHdValue1*10f)/10f;
-            outWs.text = "풍속 :" + Mathf.Round(CellController.OutWsValue1*10f)/10f;
-            outTp.text = "외부 온도 : " + Mathf.Round(CellController.OutTpValue1*10f)/10f;
-            inCo2.text = "Co2농도 :" + Mathf.Round(CellController.InCo2Value1*10f)/10f;
+            inTp.text = (Mathf.Round(CellController.InTpValue1 * 10f) / 10f).ToString();
+            inHd.text = (Mathf.Round(CellController.InHdValue1 * 10f) / 10f).ToString();
+            outWs.text = (Mathf.Round(CellController.OutWsValue1 * 10f) / 10f).ToString();
+            outTp.text = (Mathf.Round(CellController.OutTpValue1 * 10f) / 10f).ToString();
+            inCo2.text = "Co2농도 :" + Mathf.Round(CellController.InCo2Value1 * 10f) / 10f;
         }
         else if (num ==2)
         {
-            inTp.text = "내부온도 :" + CellController.InTpValue2;
-            inHd.text = "내부습도 :" + CellController.InHdValue2;
-            outWs.text = "풍속 :" + CellController.OutWsValue2;
-            outTp.text = "외부 온도 : " + CellController.OutTpValue2;
-            inCo2.text = "Co2농도 :" + CellController.InCo2Value2;
+            inTp.text = (Mathf.Round(CellController.InTpValue2 * 10f) / 10f).ToString();
+            inHd.text = (Mathf.Round(CellController.InHdValue2 * 10f) / 10f).ToString();
+            outWs.text = (Mathf.Round(CellController.OutWsValue2 * 10f) / 10f).ToString();
+            outTp.text = (Mathf.Round(CellController.OutTpValue2 * 10f) / 10f).ToString();
+            inCo2.text = "Co2농도 :" + Mathf.Round(CellController.InCo2Value2 * 10f) / 10f;
         }
         else if(num == 3)
         {
-            inTp.text = "내부온도 :" + CellController.InTpValue3;
-            inHd.text = "내부습도 :" + CellController.InHdValue3;
-            outWs.text = "풍속 :" + CellController.OutWsValue3;
-            outTp.text = "외부 온도 : " + CellController.OutTpValue3;
-            inCo2.text = "Co2농도 :" + CellController.InCo2Value3;
+            inTp.text = (Mathf.Round(CellController.InTpValue3 * 10f) / 10f).ToString();
+            inHd.text = (Mathf.Round(CellController.InHdValue3 * 10f) / 10f).ToString();
+            outWs.text = (Mathf.Round(CellController.OutWsValue3 * 10f) / 10f).ToString();
+            outTp.text = (Mathf.Round(CellController.OutTpValue3 * 10f) / 10f).ToString();
+            inCo2.text = "Co2농도 :" + Mathf.Round(CellController.InCo2Value3 * 10f) / 10f;
         }
         else if (num == 4)
         {
-            inTp.text = "내부온도 :" + CellController.InTpValue4;
-            inHd.text = "내부습도 :" + CellController.InHdValue4;
-            outWs.text = "풍속 :" + CellController.OutWsValue4;
-            outTp.text = "외부 온도 : " + CellController.OutTpValue4;
-            inCo2.text = "Co2농도 :" + CellController.InCo2Value4;
+            inTp.text = (Mathf.Round(CellController.InTpValue4 * 10f) / 10f).ToString();
+            inHd.text = (Mathf.Round(CellController.InHdValue4 * 10f) / 10f).ToString();
+            outWs.text = (Mathf.Round(CellController.OutWsValue4 * 10f) / 10f).ToString();
+            outTp.text = (Mathf.Round(CellController.OutTpValue4 * 10f) / 10f).ToString();
+            inCo2.text = "Co2농도 :" + Mathf.Round(CellController.InCo2Value4 * 10f) / 10f;
         }
         else if (num == 5)
         {
-            inTp.text = "내부온도 :" + CellController.InTpValue5;
-            inHd.text = "내부습도 :" + CellController.InHdValue5;
-            outWs.text = "풍속 :" + CellController.OutWsValue5;
-            outTp.text = "외부 온도 : " + CellController.OutTpValue5;
-            inCo2.text = "Co2농도 :" + CellController.InCo2Value5;
+            inTp.text = (Mathf.Round(CellController.InTpValue5 * 10f) / 10f).ToString();
+            inHd.text = (Mathf.Round(CellController.InHdValue5 * 10f) / 10f).ToString();
+            outWs.text = (Mathf.Round(CellController.OutWsValue5 * 10f) / 10f).ToString();
+            outTp.text = (Mathf.Round(CellController.OutTpValue5 * 10f) / 10f).ToString();
+            inCo2.text = "Co2농도 :" + Mathf.Round(CellController.InCo2Value5 * 10f) / 10f;
         }
         else if (num == 6)
         {
-            inTp.text = "내부온도 :" + CellController.InTpValue6;
-            inHd.text = "내부습도 :" + CellController.InHdValue6;
-            outWs.text = "풍속 :" + CellController.OutWsValue6;
-            outTp.text = "외부 온도 : " + CellController.OutTpValue6;
-            inCo2.text = "Co2농도 :" + CellController.InCo2Value6;
+            inTp.text = (Mathf.Round(CellController.InTpValue6 * 10f) / 10f).ToString();
+            inHd.text = (Mathf.Round(CellController.InHdValue6 * 10f) / 10f).ToString();
+            outWs.text = (Mathf.Round(CellController.OutWsValue6 * 10f) / 10f).ToString();
+            outTp.text = (Mathf.Round(CellController.OutTpValue6 * 10f) / 10f).ToString();
+            inCo2.text = "Co2농도 :" + Mathf.Round(CellController.InCo2Value6 * 10f) / 10f;
         }
         else if (num == 7)
         {
-            inTp.text = "내부온도 :" + CellController.InTpValue7;
-            inHd.text = "내부습도 :" + CellController.InHdValue7;
-            outWs.text = "풍속 :" + CellController.OutWsValue7;
-            outTp.text = "외부 온도 : " + CellController.OutTpValue7;
-            inCo2.text = "Co2농도 :" + CellController.InCo2Value7;
+            inTp.text = (Mathf.Round(CellController.InTpValue7 * 10f) / 10f).ToString();
+            inHd.text = (Mathf.Round(CellController.InHdValue7 * 10f) / 10f).ToString();
+            outWs.text = (Mathf.Round(CellController.OutWsValue7 * 10f) / 10f).ToString();
+            outTp.text = (Mathf.Round(CellController.OutTpValue7 * 10f) / 10f).ToString();
+            inCo2.text = "Co2농도 :" + Mathf.Round(CellController.InCo2Value7 * 10f) / 10f;
         }
         else if (num == 8)
         {
-            inTp.text = "내부온도 :" + CellController.InTpValue8;
-            inHd.text = "내부습도 :" + CellController.InHdValue8;
-            outWs.text = "풍속 :" + CellController.OutWsValue8;
-            outTp.text = "외부 온도 : " + CellController.OutTpValue8;
-            inCo2.text = "Co2농도 :" + CellController.InCo2Value8;
+            inTp.text = (Mathf.Round(CellController.InTpValue8 * 10f) / 10f).ToString();
+            inHd.text = (Mathf.Round(CellController.InHdValue8 * 10f) / 10f).ToString();
+            outWs.text = (Mathf.Round(CellController.OutWsValue8 * 10f) / 10f).ToString();
+            outTp.text = (Mathf.Round(CellController.OutTpValue8 * 10f) / 10f).ToString();
+            inCo2.text = "Co2농도 :" + Mathf.Round(CellController.InCo2Value8 * 10f) / 10f;
         }
         else if (num == 9)
         {
-            inTp.text = "내부온도 :" + CellController.InTpValue9;
-            inHd.text = "내부습도 :" + CellController.InHdValue9;
-            outWs.text = "풍속 :" + CellController.OutWsValue9;
-            outTp.text = "외부 온도 : " + CellController.OutTpValue9;
-            inCo2.text = "Co2농도 :" + CellController.InCo2Value9;
+            inTp.text = (Mathf.Round(CellController.InTpValue9 * 10f) / 10f).ToString();
+            inHd.text = (Mathf.Round(CellController.InHdValue9 * 10f) / 10f).ToString();
+            outWs.text = (Mathf.Round(CellController.OutWsValue9 * 10f) / 10f).ToString();
+            outTp.text = (Mathf.Round(CellController.OutTpValue9 * 10f) / 10f).ToString();
+            inCo2.text = "Co2농도 :" + Mathf.Round(CellController.InCo2Value9 * 10f) / 10f;
         }
         else
         {
-            inTp.text = "내부온도 :" + CellController.InTpValue10;
-            inHd.text = "내부습도 :" + CellController.InHdValue10;
-            outWs.text = "풍속 :" + CellController.OutWsValue10;
-            outTp.text = "외부 온도 : " + CellController.OutTpValue10;
-            inCo2.text = "Co2농도 :" + CellController.InCo2Value10;
+            inTp.text = (Mathf.Round(CellController.InTpValue10 * 10f) / 10f).ToString();
+            inHd.text = (Mathf.Round(CellController.InHdValue10 * 10f) / 10f).ToString();
+            outWs.text = (Mathf.Round(CellController.OutWsValue10 * 10f) / 10f).ToString();
+            outTp.text = (Mathf.Round(CellController.OutTpValue10 * 10f) / 10f).ToString();
+            inCo2.text = "Co2농도 : " +Mathf.Round(CellController.InCo2Value10 * 10f) / 10f + "ppm";
         }
 
     }
@@ -130,22 +130,22 @@ public class DetailCellControl : MonoBehaviour
         DropdownManager.ActiveButton = false;
         canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
         //처음 생성시 정보. 그것은 10번쨰 데이터!
-        inTp.text = "내부온도 :" + CellController.InTpValue10;
-        inHd.text = "내부습도 :" + CellController.InHdValue10;
-        outWs.text = "풍속 :" + CellController.OutWsValue10;
-        outTp.text = "외부 온도 : " + CellController.OutTpValue10;
-        inCo2.text = "Co2농도 :" + CellController.InCo2Value10;
+        inTp.text = (Mathf.Round(CellController.InTpValue10 * 10f) / 10f).ToString();
+        inHd.text = (Mathf.Round(CellController.InHdValue10 * 10f) / 10f).ToString();
+        outWs.text = (Mathf.Round(CellController.OutWsValue10 * 10f) / 10f).ToString();
+        outTp.text = (Mathf.Round(CellController.OutTpValue10 * 10f) / 10f).ToString();
+        inCo2.text = "Co2농도 : " + Mathf.Round(CellController.InCo2Value10 * 10f) / 10f + "ppm";
         //그래프 아래에 넣을 시간. 이거근데 너무 길어서 보기 흉함.
-        mday1.text = "측정시간 :" + CellController.MeasDtSrValue1;
-        mday2.text = "측정시간 :" + CellController.MeasDtSrValue2;
-        mday3.text = "측정시간 :" + CellController.MeasDtSrValue3;
-        mday4.text = "측정시간 :" + CellController.MeasDtSrValue4;
-        mday5.text = "측정시간 :" + CellController.MeasDtSrValue5;
-        mday6.text = "측정시간 :" + CellController.MeasDtSrValue6;
-        mday7.text = "측정시간 :" + CellController.MeasDtSrValue7;
-        mday8.text = "측정시간 :" + CellController.MeasDtSrValue8;
-        mday9.text = "측정시간 :" + CellController.MeasDtSrValue9;
-        mday10.text = "측정시간 :" + CellController.MeasDtSrValue10;
+        mday1.text = CellController.MeasDtSrValue1.Substring(8,2);
+        mday2.text = CellController.MeasDtSrValue2.Substring(8, 2);
+        mday3.text = CellController.MeasDtSrValue3.Substring(8, 2);
+        mday4.text = CellController.MeasDtSrValue4.Substring(8, 2);
+        mday5.text = CellController.MeasDtSrValue5.Substring(8, 2);
+        mday6.text = CellController.MeasDtSrValue6.Substring(8, 2);
+        mday7.text = CellController.MeasDtSrValue7.Substring(8, 2);
+        mday8.text = CellController.MeasDtSrValue8.Substring(8, 2);
+        mday9.text = CellController.MeasDtSrValue9.Substring(8, 2);
+        mday10.text = CellController.MeasDtSrValue10.Substring(8, 2);
     }
 
     public void ExitButton()
