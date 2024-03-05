@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.iOS;
 using UnityEngine.UI;
 
 public class DetailCellControl : MonoBehaviour
@@ -23,7 +22,7 @@ public class DetailCellControl : MonoBehaviour
     [SerializeField] TMP_Text mday5;
     [SerializeField] TMP_Text mday6;
     [SerializeField] TMP_Text mday7;
-    [SerializeField] TMP_Text mday8;
+    [SerializeField] TMP_Text mday8; 
     [SerializeField] TMP_Text mday9;
     [SerializeField] TMP_Text mday10;
     [SerializeField] TMP_Text hmday1;
