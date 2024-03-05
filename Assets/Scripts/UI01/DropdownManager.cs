@@ -65,9 +65,12 @@ public class DropdownManager : MonoBehaviour
         }
     }
 
+ 
+
     private void Update()
     {
         ActiveControl();
+
     }
 }
 
